@@ -1,0 +1,31 @@
+doctype html
+html()
+  head
+    meta(charset='utf-8')
+    title= title
+    link(media="screen" href="http://openfontlibrary.org/face/lertica" rel="stylesheet" type="text/css")
+    link(href='/css/normalize.css', rel='stylesheet')
+    link(href='/css/buttons.css', rel='stylesheet')
+    link(href='/less/app.css', rel='stylesheet')
+
+  body
+    nav#nav
+      ul
+        li Home
+          
+        li Artists
+        li Albums
+        li Songs
+    #guard
+    block content
+
+
+    script(src='/js/vendor/jquery-2.1.1.js')
+    script(src='/js/vendor/lodash-2.4.1.js')
+    script(src='/js/vendor/moment-2.6.0.js')
+    script(src='/js/vendor/buttons.js')
+    script(src='/js/vendor/traceur.js')
+    script(src='/js/es5/main.js')
+    script(src='/js/es6/compiled/main.js')
+
+    block scripts
